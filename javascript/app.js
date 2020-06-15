@@ -1,25 +1,16 @@
-$(".image").hide();
 
-$("#projectOneContainer").hover(function(){
-
-        $("#foodFunImage").show();
-    }, function() {
-        $("#foodFunImage").hide();
-
-});
-
-$("#trainContainer").hover(function(){
-    console.log("it's working")
-    $("#trainImage").show();
+$(".appContainer").hover(function(){
+    var image = $(this).data("image")
+    console.log(image)
+    var picDiv = $("<img>")
+    picDiv.attr("src", 'images/' + image + '.png')
+    picDiv.addClass("image")
+    $("#imageDiv").empty();
+    $("#imageDiv").append(picDiv);
 }, function() {
-    $("#trainImage").hide();
-
-});
-
-$("#triviaContainer").hover(function(){
-    console.log("Working?")
-    $("#triviaImage").show();
-}, function() {
-    $("#triviaImage").hide();
-
+    $("#imageDiv").empty();
+    var picDiv = $("<img>")
+    picDiv.attr("src", "images/allPics.png")
+    picDiv.addClass("image")
+    $("#imageDiv").append(picDiv);
 });

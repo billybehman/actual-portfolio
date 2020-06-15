@@ -14,6 +14,17 @@
 
 }
 
+.appContainer {
+
+    border: 10px solid rgba(77, 50, 50, 0.527);
+    background-color: rgba(255, 255, 255, 0.623);
+    border-radius: 10px;
+    height: inherit;
+    margin-top: 15px;
+    font-size: 20px;
+
+}
+
 .container {
 
     border: 10px solid rgba(77, 50, 50, 0.527);
@@ -25,14 +36,18 @@
 
 }
 
-img {
+.image {
 
-    height: 500px;
+    height: 800px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 70%;
+    transition: width 3s, height 3s;
+}
 
+#appsContainer {
+    margin: 25px;
 }
 
 body {
